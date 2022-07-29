@@ -18,26 +18,30 @@
 
 // import PaintingList from './components/PaintingList';
 // import Section from './components/Section';
-import Profile from './Profile';
-import user from './user.json';
+import TaskTitle from './TaskTitle/TaskTitle';
+import Profile from './Profile/Profile';
+import user from './Profile/user.json';
 
-import Statistics from './Statistics';
-import data from './data.json';
+import Statistics from './Statistics/Statistics';
+import data from './Statistics/data.json';
 
-export default function App() {
+function App() {
   return (
     <div>
-     
-        <Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/>
+    
+      <TaskTitle tasktitle="1 - Профиль социальной сети" />
       
+      <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+      />
+      
+       <TaskTitle tasktitle="2 - Секция статистики" />
      
-<Statistics stats={data} />
+      <Statistics stats={data} />
     
 
      
@@ -47,4 +51,5 @@ export default function App() {
   );
 }
 
+export default App;
 
