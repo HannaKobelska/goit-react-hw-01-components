@@ -19,7 +19,7 @@ function Statistics(props) {
     <section className={css.statistics}>
       
       {props.title === undefined ? (
-        <h2 className={css.hidden}></h2>
+        <h2 className={css.hidden}>aaa</h2>
       ) : (
         <h2 className={css.title}>{props.title}</h2>
       )}
