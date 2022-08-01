@@ -1,29 +1,13 @@
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
 
-
-// import PaintingList from './components/PaintingList';
-// import Section from './components/Section';
 import TaskTitle from './TaskTitle/TaskTitle';
 import Profile from './Profile/Profile';
 import user from './Profile/user.json';
 
 import Statistics from './Statistics/Statistics';
 import data from './Statistics/data.json';
+
+import FriendList from './FriendListCont/FriendList';
+import friends from './FriendListCont/friends.json';
 
 function App() {
   return (
@@ -41,13 +25,16 @@ function App() {
       
        <TaskTitle tasktitle="2 - Секция статистики" />
      
-      <Statistics stats={data} />
+       <Statistics title="Upload stats" stats={data} />
     
+      <TaskTitle tasktitle="3 - Список друзей" />
+      
+      <FriendList friends={friends} />
 
+       <TaskTitle tasktitle="4 - История транзакций" />
      
     </div>
 
-     
   );
 }
 
