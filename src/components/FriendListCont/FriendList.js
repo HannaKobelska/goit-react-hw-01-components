@@ -17,12 +17,12 @@ const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.propTypes = {
-  isOnline: PropTypes.bool.isRequired,
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
-};
+// FriendList.propTypes = {
+//   isOnline: PropTypes.string.isRequired,
+//   avatar: PropTypes.string.isRequired,
+//   name: PropTypes.string.isRequired,
+//   id: PropTypes.number.isRequired,
+// };
 
 export default FriendList;
 

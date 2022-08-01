@@ -22,4 +22,11 @@ FriendListItem.propTypes = {
   id: PropTypes.number.isRequired,
 };
 
+FriendListItem.defaultProps = {
+  isOnline: null,
+  avatar: "нет фото",
+  name: "нет имени",
+  id: 0,
+};
+
 export default FriendListItem;
